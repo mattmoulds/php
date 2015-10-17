@@ -1,12 +1,12 @@
 <?php
   // This is my firstname
-$name = "Matt";
+$name = "Matthew";
 $location = "Orlando, FL";
 /*
 This is my fullname.
 Of British origin
 */
-$fullName = "Matt Moulds";
+$fullName = "Matthew Moulds";
 // use fullname as our name
 $name = $fullName;
 ?>
