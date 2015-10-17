@@ -1,4 +1,4 @@
-<?php
+<?php 
 define("USE_FULL_NAME",FALSE);
 define("MAX_BADGES", 150000);
 
