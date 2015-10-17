@@ -1,5 +1,10 @@
 <?php
-  // This is my firstname
+
+define("YEAR",2015);
+define("JOB_TITLE","Teacher");
+define("MAX_BADGES",15000);
+
+// This is my firstname
 $name = "Matthew";
 $location = "Orlando, FL";
 /*
@@ -35,22 +40,8 @@ $name = $fullName;
     </section>
     <section class="main">
       <pre><?php
-          $greeting = "Hello, friends!\n";
-          $greeting{0} = "J";
-          $secondaryGreeting = "How are you today?";
-          //echo $greeting;
-          //echo $secondaryGreeting;
-
-          $bool = TRUE;
-          //var_dump($bool);
-          $bool = FALSE;
-          //var_dump($bool);
-
-          var_dump((bool)"abc");
-          var_dump((bool)1);
-          var_dump((bool)1.0);
-          var_dump((bool)-1);
-
+          echo YEAR;
+          echo JOB_TITLE;
         ?></pre>
     </section>
   </body>
