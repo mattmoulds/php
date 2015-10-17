@@ -4,8 +4,6 @@ define("YEAR",2015);
 define("JOB_TITLE","Teacher");
 define("MAX_BADGES",15000);
 
-
-
 // This is my firstname
 $name = "Matthew";
 $location = "Orlando, FL";
@@ -45,16 +43,16 @@ $name = $fullName;
           //echo YEAR;
           //echo JOB_TITLE;
 
-          $matthew = array(5, 'Blue', 13.5, TRUE);
-          print_r($matthew);
-          $array_example = [];
+          $eye_colors = array(
+              'chris' =>'blue',
+              'tom' =>'green',
+              'jim' =>'brown');
+          print_r($eye_colors);
+          $eye_colors['jim'] = 'green';
+          $eye_colors['tom'] = 'brown';
+          $eye_colors['chuck'] = 'blue';
+          print_r($eye_colors);
 
-          $eye_color = array('blue', 'green', 'brown');
-          print_r($eye_color);
-          $eye_color[1] = 'yellow';
-          echo $eye_color[1];
-          $eye_color[] = 'amber';
-          print_r($eye_color);
         ?></pre>
     </section>
   </body>
