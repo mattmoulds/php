@@ -3,17 +3,31 @@
 define("YEAR",2015);
 define("JOB_TITLE","Teacher");
 define("MAX_BADGES",15000);
+define("USE_FULL_NAME",FALSE);
+define("MAX_BADGES", 20);
 
-// This is my firstname
-$name = "Matthew";
+$firstName = "Matthew";
+$lastName = "Moulds";
 $location = "Orlando, FL";
-/*
-This is my fullname.
-Of British origin
-*/
-$fullName = "Matthew Moulds";
-// use fullname as our name
-$name = $fullName;
+$role = "System Administrator";
+
+if( USE_FULL_NAME == TRUE ) {
+  // run this code if USE_FULL_NAME is true
+  $name = $firstName . ' ' . $lastName;
+} else {
+  $name = $firstName;
+}
+
+if($role == "System Administrator"){
+  $info = "$role";
+} elseif($role == "Student") {
+  $info = "$role";
+} else {
+  $info = "Guest";
+}
+
+$socialIcons = array("twitter", "github", "google");
+
 ?>
 
 <!DOCTYPE html>
@@ -32,10 +46,16 @@ $name = $fullName;
       <h1><?php echo $name ?></h1>
       <p><?php echo $location ?></p>
       <hr />
-      <p>Welcome to PHP Basics!</p>
+      <p><?php echo $info; ?></p>
       <hr />
       <ul class="social">
-        <li><a href=""><span class="icon twitter"></span></a></li>
+        <?php
+          foreach($socialIcons as $icon) {
+        ?>
+        <li><a href=""><span class="icon <?php echo $icon; ?>"></span></a></li>
+        <?php
+      }
+        ?>
       </ul>
     </section>
     <section class="main">
@@ -43,7 +63,8 @@ $name = $fullName;
           //echo YEAR;
           //echo JOB_TITLE;
 
-          echo "Hello Rebecca";
+          echo "Deployed via Jenkins";
+          echo "\n";
 
           $eye_colors = array(
               'chris' =>'blue',
