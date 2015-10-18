@@ -43,6 +43,8 @@ $name = $fullName;
           //echo YEAR;
           //echo JOB_TITLE;
 
+          echo "Hello Jenkins build!";
+
           $eye_colors = array(
               'chris' =>'blue',
               'tom' =>'green',
