@@ -5,7 +5,7 @@ define("MAX_BADGES", 20);
 $firstName = "Matthew";
 $lastName = "Moulds";
 $location = "Orlando, FL";
-$role = "SysAdmin";
+$role = "System Administrator";
 
 if( USE_FULL_NAME == TRUE ) {
   // run this code if USE_FULL_NAME is true
@@ -14,12 +14,12 @@ if( USE_FULL_NAME == TRUE ) {
   $name = $firstName;
 }
 
-if($role == "SysAdmin"){
-  $info = "I'm a $role at Jadu";
+if($role == "System Administrator"){
+  $info = "$role";
 } elseif($role == "Student") {
-  $info = "I'm a $role at Jadu";
+  $info = "$role";
 } else {
-  $info = "I'm just visiting";
+  $info = "Guest";
 }
 
 $socialIcons = array("twitter", "github", "google");
@@ -37,7 +37,7 @@ $socialIcons = array("twitter", "github", "google");
   <body>
     <section class="sidebar text-center">
       <div class="avatar">
-        <img src="img/avatar.png" alt="<?php echo $name ?>">
+        <img src="img/git.png" alt="<?php echo $name ?>">
       </div>
       <h1><?php echo $name ?></h1>
       <p><?php echo $location ?></p>

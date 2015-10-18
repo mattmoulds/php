@@ -35,7 +35,7 @@ if($role == "SysAdmin"){
   <body>
     <section class="sidebar text-center">
       <div class="avatar">
-        <img src="img/avatar.png" alt="<?php echo $name ?>">
+        <img src="img/git.png" alt="<?php echo $name ?>">
       </div>
       <h1><?php echo $name ?></h1>
       <p><?php echo $location ?></p>
