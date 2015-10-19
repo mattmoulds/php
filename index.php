@@ -1,18 +1,10 @@
 <?php
-
-define("YEAR",2015);
-define("JOB_TITLE","Teacher");
-define("MAX_BADGES",15000);
 define("USE_FULL_NAME",FALSE);
-define("MAX_BADGES", 20);
-
 $firstName = "Matthew";
 $lastName = "Moulds";
-$location = "Orlando, FL";
 $role = "System Administrator";
 
 if( USE_FULL_NAME == TRUE ) {
-  // run this code if USE_FULL_NAME is true
   $name = $firstName . ' ' . $lastName;
 } else {
   $name = $firstName;
@@ -27,7 +19,6 @@ if($role == "System Administrator"){
 }
 
 $socialIcons = array("twitter", "github", "google");
-
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +35,6 @@ $socialIcons = array("twitter", "github", "google");
         <img src="img/git.png" alt="<?php echo $name ?>">
       </div>
       <h1><?php echo $name ?></h1>
-      <p><?php echo $location ?></p>
       <hr />
       <p><?php echo $info; ?></p>
       <hr />
@@ -60,21 +50,8 @@ $socialIcons = array("twitter", "github", "google");
     </section>
     <section class="main">
       <pre><?php
-          //echo YEAR;
-          //echo JOB_TITLE;
 
-          echo "Deployed via Jenkins";
-          echo "\n";
-
-          $eye_colors = array(
-              'chris' =>'blue',
-              'tom' =>'green',
-              'jim' =>'brown');
-          print_r($eye_colors);
-          $eye_colors['jim'] = 'green';
-          $eye_colors['tom'] = 'brown';
-          $eye_colors['chuck'] = 'blue';
-          print_r($eye_colors);
+          echo "<h1>Welcome</h1>";
 
         ?></pre>
     </section>
