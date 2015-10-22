@@ -52,6 +52,7 @@ $socialIcons = array("twitter", "github", "google");
       <pre>
         <?php
           echo "<h1>Welcome</h1>";
+          echo "\n";
           $directory = "/var/www/html/php/";
           $phpfiles = glob($directory . "*.php");
           foreach($phpfiles as $phpfile)
