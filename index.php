@@ -49,11 +49,17 @@ $socialIcons = array("twitter", "github", "google");
       </ul>
     </section>
     <section class="main">
-      <pre><?php
-
+      <pre>
+        <?php
           echo "<h1>Welcome</h1>";
-
-        ?></pre>
+          $directory = "/var/www/html/php/";
+          $phpfiles = glob($directory . "*.php");
+          foreach($phpfiles as $phpfile)
+          {
+              echo '<a href="'.basename($phpfile).'">'.basename($phpfile). "\n" . '</a>';
+          }
+        ?>
+      </pre>
     </section>
   </body>
 </html>
