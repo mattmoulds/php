@@ -41,7 +41,7 @@ $name = $fullName;
             function __construct($name, $price, $desc) {
               $this->name = $name;
               $this->price = $price;
-              $this-desc = $desc;
+              $this->desc = $desc;
             }
 
             public function getInfo() {
@@ -73,6 +73,7 @@ $name = $fullName;
           $soda = new Soda("Space soda",2,"Thirst Killer","Apple");
 
           echo $shirt->getMaker();
+          echo "\n";
           echo $shirt::$manufacturer;
 
         ?></pre>
